@@ -1,13 +1,11 @@
 # The Pottery Hut
-
-[The Pottery Hut]() 
 <br>
 <img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/dee10fbf-78a1-4537-ad08-678657c0ee85">
 <br>
 _(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
 <br>
-Some description about the page and where/why I'm at the spot that I am right now.
+[The Pottery Hut]() Some description about the page and where/why I'm at the spot that I am right now.
 <br>
 
 ## UX
