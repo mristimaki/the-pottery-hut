@@ -5,7 +5,7 @@
 _(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
 <br>
-[The Pottery Hut]() Some description about the page and where/why I'm at the spot that I am right now.
+[The Pottery Hut]() should be a fictive ceramics-shop for my Project Portfolio 5 with specialisation on e-commerce at Code Institute. Unfortunatley I have not been able to finish or almost even started this project due to personal circomstances. I intended to make this e-commerce web application a simple ceramics shop along with a blog, where the users can read more about the process of making all of the items, to why the business is so passionate about working with ceramics and also linking and inviting users to ceramics events/workshops via the blog but first of all via the email subscription. 
 <br>
 
 ## UX
