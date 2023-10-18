@@ -2,39 +2,53 @@
 
 [The Pottery Hut]() 
 <br>
-
+<img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/dee10fbf-78a1-4537-ad08-678657c0ee85">
+(This image is from my wireframes, how I intend for the landing page to look)
 <br>
 <br>
-insert image of landing page
+Some description about the page and where/why I'm at the spot that I am right now.
 <br>
 
 ## UX
 
-### Goals
+### Site goals
 
-#### Visitor Goals
-
-**The target audience for The Pottery Hut:**
-- 
-
-
+### User goals
 **User goals are:**
 
-1. 
+**The target audience for The Pottery Hut:**
 
 **The Pottery Hut will fill these needs by:**
 
-- Providing the user with 
+### Agile Methology
+The Agile Methology is used to plan this project, which was implemented through GitHub's Project board. Through the use of the Kanban board I've divided the processes in to a few different sections as follows:
+- **To do** (All of the user stories was firstly put in the "To do" section)
+- **In progress** (The user stories should bit by bit be moved in to this section when worked on)
+- **Done** (And finally should be moved to the "Done" section when the development is completed)
+<img width="1072" alt="Screenshot 2023-10-17 at 11 23 29" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/49efb000-9c9a-49b1-b4b5-b1db2cb1799f">
 
-#### Business Goals
-
-**The Business goals of The Pottery Hut are:**
-
-- Gain subscribers via the sign up page.
-- Present a good and clear design to gain interest.
-
-**User Stories** 
-* 
+#### User/Admin Stories 
+- As a **User** I can **use a simple navigation bar** so that **I can navigate easily around the page**.
+- As a **User** I can **see a preview of products on the home page** so that **I can get an idea of what to find on this page**.
+- As a **User** I can **see a list of different categories in the menu** so that **I can choose which type of product I’m interested in**.
+- As a **User** I can **use a search function** so that **I can search for a specific item**.
+- As a **User** I can **see a preview of all the products** so that **I can choose which one I’m interested in**.
+- As a **User** I can **click on a specific item** so that **I can see more details about that specific product**.
+- As a **User** I can **click to add a product to the shopping bag** so that **I can easily buy what I want**.
+- As a **User** I can **click the shopping bag** so that **I can see what’s in my bag**.
+- As a **User** I can **edit my shopping bag** so that **I can choose how many of something I want or delete an item if I change my mind or have added something by mistake**.
+- As a **User** I can **click to checkout** so that **I can make a purchase**.
+- As a **User** I can **choose to sign up** so that **I can save my address or contact details**.
+- As a **User** I can **choose to sign up with social media accounts** so that **it’s easier for me to sign up**.
+- As a **Logged in User** I can **add personal details** so that **I don’t have to re-write that every single time I want to make a purchase from this site**.
+- As a **Logged in User** I can **click to like** so that **I can save my favorite items for future purchases**.
+- As a **Logged in User** I can **rate/review any product so that** I can **give feedback about the product that I bought, how the delivery went or how I experienced the customer service**.
+- As a **User** I can **get a confirmation email** so that **I have an overview of my purchase and a confirmation that the purchase was made**.
+- As a **User** I can **see contact details in my confirmation email** so that **if I have any concerns or questions regarding my purchase, I can easily get in touch with someone in charge of my order**.
+- As a **User** I can **choose to subscribe via email** so that **I can get newsletters about new products, sales coming up or events**.
+- As a **Admin** I can **add and edit items on the site** so that **I can add new items or edit the price if we have sale on special items**.
+- As a **Admin** I can **see a list of all the orders** so that **I know what people have bought and what and how much to send each customer**. 
+- As a **Admin** I can **edit any order** so that **I can help users to edit their order if something went wrong during the order**.
 
 ## Visual Design
 
@@ -43,20 +57,20 @@ I chose the fonts for this webdesign via the [fontpair](https://www.fontpair.co/
 I chose these particular fonts because I wanted a elegant and clean look to the fonts so that the focus will go to the specific items sold on the page rather than focusing on the design of the page.
 
 ### The Colors
-insert image of colour theme
+<img width="613" alt="colour-theme-pp5" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/b174d46b-148b-4bfe-937c-e609eca00730">
 
 To create the artistic yet simple design I wanted, I choosed to go with earthy colors as all of the products sold on this page is made out of natural materials.
 
 ### The Images
 insert pictures of the images
 
-I found all of the images on this site on [Pexels](https://www.pexels.com/sv-se/).
+I found all of the images to this site on [Pexels](https://www.pexels.com/sv-se/).
 
 ### The Icons
 
-The icons are taken from the [Font Awesome](https://fontawesome.com/) website. 
+The icons will be taken from the [Font Awesome](https://fontawesome.com/) website. 
 <br>
-These are found in the footer for social media links.
+These should be found in the footer for social media links.
 
 ## Features
 
@@ -75,7 +89,8 @@ The footer is located at the bottom of every page, with links to social media pl
 <hr>
 
 #### The landing page
-insert image of landing page
+<img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/6f1d1da6-22cd-499e-9c97-27f243c0fe6e">
+(This image is from my wireframes, how I intend for the landing page to look)
 <br>
 The landing page starts with a simple introduction about the company along with a inspiring image to get the users attention. I also want to highlight a few specific items sold on the page to get the users attention and interest to buy.
 <br>
