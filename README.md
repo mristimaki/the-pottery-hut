@@ -3,7 +3,8 @@
 [The Pottery Hut]() 
 <br>
 <img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/dee10fbf-78a1-4537-ad08-678657c0ee85">
-(This image is from my wireframes, how I intend for the landing page to look)
+<br>
+_(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
 <br>
 Some description about the page and where/why I'm at the spot that I am right now.
@@ -58,7 +59,7 @@ I chose these particular fonts because I wanted a elegant and clean look to the 
 
 ### The Colors
 <img width="613" alt="colour-theme-pp5" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/b174d46b-148b-4bfe-937c-e609eca00730">
-
+<br>
 To create the artistic yet simple design I wanted, I choosed to go with earthy colors as all of the products sold on this page is made out of natural materials.
 
 ### The Images
@@ -90,7 +91,8 @@ The footer is located at the bottom of every page, with links to social media pl
 
 #### The landing page
 <img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/6f1d1da6-22cd-499e-9c97-27f243c0fe6e">
-(This image is from my wireframes, how I intend for the landing page to look)
+<br>
+_(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
 The landing page starts with a simple introduction about the company along with a inspiring image to get the users attention. I also want to highlight a few specific items sold on the page to get the users attention and interest to buy.
 <br>
