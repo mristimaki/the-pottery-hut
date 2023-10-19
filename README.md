@@ -2,11 +2,14 @@
 <br>
 <img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/dee10fbf-78a1-4537-ad08-678657c0ee85">
 <br>
+
 _(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
 <br>
-[The Pottery Hut]() should be a fictive ceramics-shop for my Project Portfolio 5 with specialisation on e-commerce at Code Institute. Unfortunatley I have not been able to finish or almost even started this project due to personal circomstances. I intended to make this e-commerce web application a simple ceramics shop along with a blog, where the users can read more about the process of making all of the items, to why the business is so passionate about working with ceramics and also linking and inviting users to ceramics events/workshops via the blog but first of all via the email subscription. 
+
+**The Pottery Hut** should be a fictive ceramics-shop for my Project Portfolio 5 with specialisation on e-commerce at Code Institute. Unfortunatley I have not been able to finish or almost even started this project due to personal circomstances (last trimester of pregnancy) and lack of time. I intended to make this e-commerce web application a simple ceramics shop along with a blog, where the users can read more about the process of making all of the items, to why the business is so passionate about working with ceramics and also linking and inviting users to ceramics events/workshops via the blog but first of all via the email subscription.
 <br>
+This README file is mostly a base for what I want to add to this file, as I have not been able to finish this project and I usually finish my README file when the project is done and deployed. 
 
 ## UX
 
@@ -49,80 +52,96 @@ The Agile Methology is used to plan this project, which was implemented through 
 - As a **Admin** I can **see a list of all the orders** so that **I know what people have bought and what and how much to send each customer**. 
 - As a **Admin** I can **edit any order** so that **I can help users to edit their order if something went wrong during the order**.
 
+## Tasks
+The tasks during the development of this project was somewhat followed by Code Institutes "Boutique Ado" walkthrough project in this particular order:
+
+#### Before project inception
+- Designing Wireframes
+- Creating reporitory in GitHub
+- Creating Project, Epics, User Stories and preparing Kanban board
+  
+#### Creating the project in Gitpod
+- Creating the django project
+- Installing Django Allauth
+- As I eventually want to customize the allauth templates, I started making copies of them in my own templates/allauth directory. Following along the Boutique Ado Setup.
+- Setting up Templates, since I'm going to use Bootstrap I've started my base.html template with the Starter Template from the [Bootstrap Documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/#starter-template) and made the basic structure for this file.
+
+
 ## Visual Design
 
 ### The Fonts
 I chose the fonts for this webdesign via the [fontpair](https://www.fontpair.co/all) website.
-I chose these particular fonts because I wanted a elegant and clean look to the fonts so that the focus will go to the specific items sold on the page rather than focusing on the design of the page.
+I chose the particular fonts because I wanted a elegant and clean look to the fonts so that the focus will go to the specific items sold on the page rather than focusing on the design of the page.
 
 ### The Colors
 <img width="613" alt="colour-theme-pp5" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/b174d46b-148b-4bfe-937c-e609eca00730">
 <br>
-To create the artistic yet simple design I wanted, I choosed to go with earthy colors as all of the products sold on this page is made out of natural materials.
+To create the artistic yet simple design I wanted, I choosed to go with neutral earthy colors as all of the products sold on this page is made out of natural materials, and as stated above, I want the products to stand out rather than focusing on the design of the page.
 
 ### The Images
-insert pictures of the images
 
-I found all of the images to this site on [Pexels](https://www.pexels.com/sv-se/).
+I found all of the images to this site on [Pexels](https://www.pexels.com/sv-se/). I will store all of my media files at [Cloudinary](https://cloudinary.com/ip/gr-sea-gg-brand-home-base?utm_source=google&utm_medium=search&utm_campaign=goog_selfserve_brand_wk22_replicate_core_branded_keyword&utm_term=1329&campaignid=17601148700&adgroupid=141182782954&keyword=cloudinary&device=c&matchtype=e&adposition=&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEpuxAQIlB3ADCSNWSqO84mz6ldLXcqLtAOC-fmata45ShySiwssRiRoCXa0QAvD_BwE)
 
 ### The Icons
 
 The icons will be taken from the [Font Awesome](https://fontawesome.com/) website. 
 <br>
-These should be found in the footer for social media links.
+These will be found in the footer for social media links when project is done.
 
 ## Features
 
 ### Page Elements
 
 #### Navigation bar
-insert picture of navbar
 <br>
-The navigation bar is located at the very top of every page, making it easy for the user to navigate back and forth trough the pages.
+The navigation will be located at the very top of every page, making it easy for the user to navigate back and forth trough the pages.
 <hr>
 
 #### Footer
-insert image of footer
 <br>
-The footer is located at the bottom of every page, with links to social media platforms. I want to use a simple design and a fun hover effect so that the user may get interested in visiting the social media links provided.
+The footer will be located at the bottom of every page, with links to social media platforms and email contact. I want to use a simple design and a fun hover effect so that the user may get interested in visiting the social media links provided.
 <hr>
 
 #### The landing page
 <img width="627" alt="landing-page-desktop" src="https://github.com/mristimaki/the-pottery-hut/assets/121927123/6f1d1da6-22cd-499e-9c97-27f243c0fe6e">
 <br>
+
 _(This image is from my wireframes, how I intend for the landing page to look)_
 <br>
-The landing page starts with a simple introduction about the company along with a inspiring image to get the users attention. I also want to highlight a few specific items sold on the page to get the users attention and interest to buy.
+The landing page should start with a simple introduction about the company along with a inspiring image to get the users attention. I also want to highlight a few specific items sold on the page to get the users attention and interest to buy.
 <br>
 <hr>
 
 #### Product pages
-insert image of product page
+
 <br>
 I want the product page to be as simple as possible to let the products "shine". 
 <br>
 <hr>
 
 #### Blog
-insert image of blog page
+
 <br>
-I wanted to add a blog page on this website to uplift the experience for the users, and make them want to stay and hopefully come back to the page. I want the blog to be a inspiration for the users, for those just wanting to see how the process is from clay to finished product, but also for those who wants to get creative and create by them selves. 
+I wanted to add a blog page on this website to uplift the experience for the users, and make them want to stay and hopefully come back to the page. I want the blog to be a inspiration for the users, for those just wanting to see the process from clay to finished product, but also for those who wants to get creative and create by them selves. 
 <br>
 <hr>
 
 ### Feature Ideas
 
-
 ## Technologies used
 
 ### Languages
+These are the languages I will use in this project
 * HTML: Page markup.
 * CSS: Styling.
-* 
+* Python: Used to implement Django functionality, building models, forms and views for the app.
+* JavaScript: Used to give the page interactivity.
 
-### Libraries
-* [Google Fonts](https://fonts.google.com/): Font styles. 
-* [Font Awesome](https://fontawesome.com/): Used for icons.
+### Framework, Libraries & Programs
+* [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+* [Django](https://www.djangoproject.com/start/): Used to build the models, forms and views of the app.
+* [Bootstrap](https://getbootstrap.com/): Used to implement responsiveness of the site.
 
 ### Platforms
 * [GitHub](https://github.com/): Storing code remotly and deployment.
@@ -136,7 +155,7 @@ I wanted to add a blog page on this website to uplift the experience for the use
 
 ## Testing
 
-The design of [The Pottery Hut]() should be responsive so that..
+The design of **The Pottery Hut** should be responsive so that when viewing the site on smaller devices, the design will change for good UX. 
 
 ### General testing
 
@@ -149,10 +168,10 @@ The design of [The Pottery Hut]() should be responsive so that..
 ## Deployment
 
 ### Heroku Deployment
-- This site was deployed to Heroku. The steps to deploy are as follows.
-  - 
+- This site should deployed to Heroku. The steps to deploy are as follows.
+  
 
-The live link can be found here: insert link here
+The live link can be found here: (_I will insert the live link here_)
 
 #### Clone GitHub repositry instructions
 It is possible to clone this repositry, to be able to work alongside me for this project it is required to have a free GitHub account and then go trough the steps as follows. 
@@ -177,5 +196,5 @@ It is possible to clone this repositry, to be able to work alongside me for this
   - **Email** `rosanna.ristimaki@gmail.com`
   - **Skype** [Maryam Rutqvist Ristimaki](https://join.skype.com/invite/xfUYvIMqTjPp)
 
-I've chosen not to include any contact information within the webpage since this is not a real website yet but if it would be in the future I would put this along with the Sign Up page as well as in the footer with social media links. 
+I've chosen not to include any contact information within the webpage since this is not a real website yet but if it would be in the future I would put this along with the subscription emails as well as in the footer with social media links. 
 <br>
