@@ -33,7 +33,15 @@
     <title>The Pottery Hut {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top"></header>
+    <header class="container-fluid fixed-top">
+      <div class="row">
+        <div class="col my-auto py-1 py-lg-0 text-uppercase"></div>
+        <div class="col-6 my-auto py-1 py-lg-0">
+          <a href="{% url 'home' %}" class="nav-link pottery-logo text-uppercase"><h2>The Pottery Hut</h2></a>
+        </div>
+        <div class="col my-auto py-1 py-lg-0 text-uppercase"></div>
+      </div>
+    </header>
 
     {% if messages %}
         <div class="message-container"></div>
