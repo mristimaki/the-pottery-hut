@@ -34,8 +34,9 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
+      <!-- navigation bar -->
       <div class="row">
-        <div class="col my-auto py-1 py-lg-0 text-uppercase">
+        <div class="col my-auto py-1 py-lg-0 text-uppercase text-black">
           <ul class="list-inline list-unstyled">
             <li class="list-inline-item">About</li>
             <li class="list-inline-item">Blog</li>
@@ -43,10 +44,10 @@
           </ul>
         </div>
         <div class="col-6 my-auto py-1 py-lg-0">
-          <a href="{% url 'home' %}" class="nav-link pottery-logo text-uppercase"><h2>The Pottery Hut</h2></a>
+          <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
         </div>
         <!-- search form -->
-        <div class="col my-auto py-1 py-lg-0">
+        <div class="col-sm my-auto py-1 py-lg-0">
           <form method="GET" action="">
             <div class="input-group input-group-sm w-100">
               <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
@@ -59,6 +60,45 @@
               </div>
             </div>
           </form>
+        </div>
+        <!-- account and shopping bag -->
+        <div class="row">
+          <div class="col my-auto py-lg-0 text-uppercase">
+            <ul class="list-inline list-unstyled">
+              <li class="list-inline-item dropdown">
+                <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <div class="text-center text-uppercase"><i class="fa-regular fa-user"></i></div>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="user-options">
+                  {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                    <a href="" class="dropdown-item text-uppercase">Product Management</a>
+                    {% endif %}
+                    <a href="" class="dropdown-item text-uppercase">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Sign out</a>
+                  {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item text-uppercase">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item text-uppercase">Sign in</a>
+                  {% endif %}
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                  <div class="text-center">
+                    <div><i class="fa-solid fa-basket-shopping">
+                    </i></div>
+                    <p class="my-0">
+                      {% if grand_total %}
+                        ${{ grand_total|floatformat:2 }}
+                      {% else %}
+                        $0.00
+                      {% endif %}
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
