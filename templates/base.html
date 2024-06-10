@@ -35,11 +35,31 @@
   <body>
     <header class="container-fluid fixed-top">
       <div class="row">
-        <div class="col my-auto py-1 py-lg-0 text-uppercase"></div>
+        <div class="col my-auto py-1 py-lg-0 text-uppercase">
+          <ul class="list-inline list-unstyled">
+            <li class="list-inline-item">About</li>
+            <li class="list-inline-item">Blog</li>
+            <li class="list-inline-item">Shop</li>
+          </ul>
+        </div>
         <div class="col-6 my-auto py-1 py-lg-0">
           <a href="{% url 'home' %}" class="nav-link pottery-logo text-uppercase"><h2>The Pottery Hut</h2></a>
         </div>
-        <div class="col my-auto py-1 py-lg-0 text-uppercase"></div>
+        <!-- search form -->
+        <div class="col my-auto py-1 py-lg-0">
+          <form method="GET" action="">
+            <div class="input-group input-group-sm w-100">
+              <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
+              <div class="input-group-append">
+                <button class="form-control btn button-outline-light" type="submit">
+                  <span class="searc-icon">
+                    <i class="fas magnifying-glass"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </header>
 
