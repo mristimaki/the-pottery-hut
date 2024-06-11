@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('media/pottery-tableware-decor-unique-design.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(80vh - 150px);
+    color: #36281D;
+    font-family: 'Montserrat';
+}
