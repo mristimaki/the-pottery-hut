@@ -9,3 +9,22 @@ body {
     color: #36281D;
     font-family: 'Montserrat';
 }
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #36281D;
+}
+
+.shop-button {
+    background-color: white;
+    color: #36281D;
+}
+
+.shop-button:hover {
+    background-color: #E2D3C1;
+}
