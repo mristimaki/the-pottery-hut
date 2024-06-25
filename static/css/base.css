@@ -11,6 +11,10 @@ body {
     font-weight: 500;
 }
 
+i {
+    color: #36281D;
+}
+
 .pottery-logo {
     text-decoration: none;
     color: #A1643E;
@@ -31,6 +35,7 @@ body {
 .shop-button {
     background-color: white;
     color: #36281D;
+    min-width: 300px;
 }
 
 .shop-button:hover {
