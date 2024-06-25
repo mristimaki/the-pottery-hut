@@ -37,17 +37,15 @@
       <!-- product collapsable menu -->
       <div class="row">
         <div class="col my-auto py-lg-0">
-          <div class="dropdown product-btn">
-            <a class="btn dropdown-toggle text-uppercase" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Products
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item text-uppercase" href="#">Favourites</a>
-              <a class="dropdown-item text-uppercase" href="#">Tableware</a>
-              <a class="dropdown-item text-uppercase" href="#">Decor</a>
-              <a class="dropdown-item text-uppercase" href="#">All Pottery</a>
-            </div>
+          <div id="theSidemenu" class="sidemenu text-uppercase">
+            <a href="javascript:void(0)" class="closemenubtn" onclick="closeMenu()">&times;</a>
+            <a href="#">Favourites</a>
+            <a href="#">Tableware</a>
+            <a href="#">Decor</a>
+            <a href="#">All Pottery</a>
           </div>
+
+          <button class="openmenubtn" onclick="openMenu()">&#9776;</button>
         </div>
         <div class="col-5 my-auto py-1 py-lg-0">
           <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
