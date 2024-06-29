@@ -3,23 +3,41 @@ html {
 }
 
 body {
-    background: url('media/pottery-tableware-decor-unique-design.jpg') no-repeat center center fixed;
+    background: url('/images/pottery-tableware-decor-unique-design.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(80vh - 150px);
+    height: calc(100vh - 150px);
     color: #36281D;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 300 light;
 }
 
-i {
-    color: #36281D;
+.page-header {
+    background-color: #D0D3DA;
+}
+
+input:focus {
+    border: 1px solid white;
+}
+
+.nav-link {
+    padding: 10px 5px 0px 0px;
 }
 
 .pottery-logo {
     text-decoration: none;
-    color: #A1643E;
-    font-family: "Poiret One", sans-serif;
-    font-size: 25px;
+    color: #B3603E;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 700 bold;
+}
+
+.pottery-logo:hover {
+    text-decoration: none;
+    color: #B3603E;
+}
+
+.product-hover:hover {
+    background-color: #D0D3DA;
 }
 
 /* from Bulma */
@@ -39,5 +57,5 @@ i {
 }
 
 .shop-button:hover {
-    background-color: #E2D3C1;
+    background-color: #D0D3DA;
 }

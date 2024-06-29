@@ -20,7 +20,9 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -40,7 +42,7 @@
     <title>The Pottery Hut {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top page-header">
       <!-- product collapsable menu -->
       <div class="row">
         <div class="col my-auto py-lg-0">
@@ -55,36 +57,26 @@
             <a class="dropdown-item text-uppercase" href="#">All Pottery</a>
           </div>
         </div>
-        <div class="col-5 my-auto py-1 py-lg-0">
-          <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
-        </div>
+
         <!-- search form -->
-        <div class="col my-auto py-1 py-lg-0">
+        <div class="col-4 my-auto py-1 py-lg-0">
           <form method="GET" action="">
             <div class="input-group input-group-sm w-100">
-              <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
               <div class="input-group-append">
-                <button class="form-control btn" type="submit">
-                  <span class="searc-icon">
-                    <i class="fas magnifying-glass"></i>
-                  </span>
-                </button>
+                <button class="form-control btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
+              <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
             </div>
           </form>
         </div>
+
         <!-- blog, account and shopping bag -->
         <div class="row">
-          <div class="col my-auto py-lg-0 text-uppercase">
+          <div class="col mr-3 text-uppercase">
             <ul class="list-inline list-unstyled">
-              <li class="list-inline-item">
-                <a class="nav-link" href="#">
-                  <div class="text-center"><i class="fa-solid fa-book-open"></i></div>
-                </a>
-              </li>
               <li class="list-inline-item dropdown">
                 <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="text-center"><i class="fa-regular fa-user"></i></div>
+                  <div class="text-center icon"><i class="fa-regular fa-user"></i></div>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="user-options">
                   {% if request.user.is_authenticated %}
@@ -100,14 +92,21 @@
                 </div>
               </li>
               <li class="list-inline-item">
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
-                  <div class="text-center text-black">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
+                  <div class="text-center icon">
                     <div><i class="fa-solid fa-basket-shopping">
                     </i></div>
                   </div>
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-5 align-self-center">
+            <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
           </div>
         </div>
       </div>
