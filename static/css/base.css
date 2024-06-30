@@ -11,8 +11,8 @@ body {
     font-weight: 300 light;
 }
 
-.page-header {
-    background-color: #D0D3DA;
+.header-bg {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 input:focus {

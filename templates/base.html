@@ -42,7 +42,12 @@
     <title>The Pottery Hut {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top page-header">
+    <header class="container-fluid fixed-top header-bg">
+      <!-- Pottery Logo -->
+      <div class="col-5 align-self-center">
+        <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
+      </div>
+
       <!-- product collapsable menu -->
       <div class="row">
         <div class="col my-auto py-lg-0">
@@ -100,13 +105,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-5 align-self-center">
-            <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
           </div>
         </div>
       </div>
