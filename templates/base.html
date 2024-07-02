@@ -68,7 +68,7 @@
           <form method="GET" action="">
             <div class="input-group input-group-sm w-100">
               <div class="input-group-append">
-                <button class="form-control btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="search-btn" class="form-control btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
               <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
             </div>
@@ -99,8 +99,12 @@
               <li class="list-inline-item">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
                   <div class="text-center icon">
-                    <div><i class="fa-solid fa-basket-shopping">
-                    </i></div>
+                    <!-- bag that shows number of items inside -->
+                    <div><i class="fa-solid fa-basket-shopping"></i>
+                      <div class="items-circle text-center rounded-circle">
+                        <span>{{ bag.num_of_items }}</span>
+                      </div>
+                    </div>
                   </div>
                 </a>
               </li>

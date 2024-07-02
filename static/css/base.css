@@ -11,6 +11,26 @@ body {
     font-weight: 300 light;
 }
 
+.form-control:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#search-btn {
+    border: none;
+    font-size: 11.3px;
+    background-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .header-bg {
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -58,4 +78,10 @@ input:focus {
 
 .shop-button:hover {
     background-color: #D0D3DA;
+}
+
+.items-circle {
+    background-color: white;
+    color: #36281D;
+    display: flex;
 }
