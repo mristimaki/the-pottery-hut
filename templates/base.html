@@ -44,73 +44,15 @@
   <body>
     <header class="container-fluid fixed-top header-bg">
       <!-- Pottery Logo -->
-      <div class="col-5 align-self-center">
+      <div class="col-5 align-self-center w-100">
         <a href="{% url 'home' %}" class="nav-link pottery-logo"><h2>The Pottery Hut</h2></a>
       </div>
 
-      <!-- product collapsable menu -->
       <div class="row">
-        <div class="col my-auto py-lg-0">
-          <a class="btn productbtn dropdown-toggle text-uppercase" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Products
-          </a>
-
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item text-uppercase" href="#">Favourites</a>
-            <a class="dropdown-item text-uppercase" href="#">Tableware</a>
-            <a class="dropdown-item text-uppercase" href="#">Decor</a>
-            <a class="dropdown-item text-uppercase" href="#">All Pottery</a>
-          </div>
-        </div>
-
-        <!-- search form -->
-        <div class="col-4 my-auto py-1 py-lg-0">
-          <form method="GET" action="">
-            <div class="input-group input-group-sm w-100">
-              <div class="input-group-append">
-                <button id="search-btn" class="form-control btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-              </div>
-              <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
-            </div>
-          </form>
-        </div>
-
-        <!-- blog, account and shopping bag -->
-        <div class="row">
-          <div class="col mr-3 text-uppercase">
-            <ul class="list-inline list-unstyled">
-              <li class="list-inline-item dropdown">
-                <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="text-center icon"><i class="fa-regular fa-user"></i></div>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="user-options">
-                  {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                    <a href="" class="dropdown-item text-uppercase">Product Management</a>
-                    {% endif %}
-                    <a href="" class="dropdown-item text-uppercase">My Profile</a>
-                    <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Sign out</a>
-                  {% else %}
-                    <a href="{% url 'account_signup' %}" class="dropdown-item text-uppercase">Register</a>
-                    <a href="{% url 'account_login' %}" class="dropdown-item text-uppercase">Sign in</a>
-                  {% endif %}
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
-                  <div class="text-center icon">
-                    <!-- bag that shows number of items inside -->
-                    <div><i class="fa-solid fa-basket-shopping"></i>
-                      <div class="items-circle text-center rounded-circle">
-                        <span>{{ bag.num_of_items }}</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <nav class="navbar navbar-expand-lg w-100">
+          {% include 'includes/mobile-top-header.html' %}
+          {% include 'includes/main-nav.html' %}
+        </nav>
       </div>
     </header>
 
