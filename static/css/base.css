@@ -85,3 +85,7 @@ input:focus {
     color: #36281D;
     display: flex;
 }
+
+.dropdown-bottom {
+    padding: 25px;
+}

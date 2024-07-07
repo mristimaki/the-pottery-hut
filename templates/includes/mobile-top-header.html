@@ -1,8 +1,45 @@
 <!-- 
  mobile navbar with hamburger dropdown 
  dropdown should have list of products and 
- account icon and social media icon at 
+ blog icon and social media icon at 
  the bottom
 
- search icon and basket icon beside hamburger
+ search icon, account and basket icon beside hamburger
  -->
+<div class="col d-block d-lg-none">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" href="#" id="mobile-nav">
+        <ul class="navbar-nav w-auto mx-auto">
+            <li class="list-inline-item dropdown">
+                <a class="dropdown-item text-uppercase" href="#">Favourites</a>
+            </li>
+            <li class="list-inline-item dropdown">
+                <a class="dropdown-item text-uppercase" href="#">Tableware</a>
+            </li>
+            <li class="list-inline-item dropdown">
+                <a class="dropdown-item text-uppercase" href="#">Decor</a>
+            </li>
+            <li class="list-inline-item dropdown">
+                <a class="dropdown-item text-uppercase" href="#">All Products</a>
+            </li>
+        </ul>
+
+        <div class="dropdown-bottom d-block d-lg-none">
+            <hr class="d-block d-lg-none">
+            <ul>
+                <li class="list-inline-item">
+                    <a class="text-uppercase" href="#"><i class="fa-regular fa-heart"></i> My Favourites</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-uppercase" href="#"><i class="fa-solid fa-book-open"></i> Blog</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-uppercase" href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
