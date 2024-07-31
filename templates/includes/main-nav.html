@@ -22,7 +22,7 @@
 </div>
 
 <!-- search form -->
-<div class="col-4 my-auto py-1 py-lg-0">
+<div class="col-4 my-auto py-1 py-lg-0 d-none d-sm-block">
     <form method="GET" action="">
       <div class="input-group input-group-sm w-100">
         <div class="input-group-append">
@@ -33,9 +33,9 @@
     </form>
   </div>
 
-<!-- blog, account and shopping bag -->
+<!-- account and shopping bag -->
 <div class="row">
-    <div class="col mr-3 text-uppercase">
+    <div class="col mr-3 text-uppercase d-none d-sm-block">
       <ul class="list-inline list-unstyled">
         <li class="list-inline-item dropdown">
           <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,7 +58,8 @@
           <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
             <div class="text-center icon">
               <!-- bag that shows number of items inside -->
-              <div><i class="fa-solid fa-basket-shopping"></i>
+              <div>
+                <i class="fa-solid fa-basket-shopping"></i>
               </div>
             </div>
           </a>

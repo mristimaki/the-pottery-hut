@@ -1,18 +1,11 @@
-<!-- 
- mobile navbar with hamburger dropdown 
- dropdown should have list of products and 
- blog icon and social media icon at 
- the bottom
-
- search icon, account and basket icon beside hamburger
- -->
 <nav class="navbar navbar-expand-lg navbar-light d-block d-sm-none">
     <div class="col d-block d-lg-none">
         <button class="navbar-toggler" type="button" data-toggle="dropdown" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <!-- dropdown menu only shown on smaller screens -->
+        <div class="dropdown-menu list-inline" aria-labelledby="navbarDropdown">
             <a class="dropdown-item text-uppercase" href="#">Our Favourites</a>
             <a class="dropdown-item text-uppercase" href="#">Tableware</a>
             <a class="dropdown-item text-uppercase" href="#">Decor</a>
@@ -26,6 +19,53 @@
               <a class="dropdown-item text-uppercase" href="#"><i class="fa-solid fa-book-open"></i> Blog</a>
               <a class="dropdown-item text-uppercase" href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
-          </div>
+        </div>
+
+        <!-- search, account and basket icons -->
+        <div class="row">
+            <div class="col mr-3 text-uppercase">
+              <ul class="list-inline list-unstyled">
+                <!-- Search icon that should have hidden search input, toggle with js -->
+                <li class="list-inline-item dropdown">
+                    <div class="text-center icon">
+                        <button id="mobile-search-btn" class="form-control btn text-center icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                        <form id="mobile-search-form" class="input-group input-group-sm w-100 search-input" method="GET" action="">
+                            <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
+                        </form>
+                    </div>
+                </li>
+                
+                <!-- User account -->
+                <li class="list-inline-item dropdown">
+                  <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center icon"><i class="fa-regular fa-user"></i></div>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="user-options">
+                    {% if request.user.is_authenticated %}
+                      {% if request.user.is_superuser %}
+                      <a href="" class="dropdown-item text-uppercase">Product Management</a>
+                      {% endif %}
+                      <a href="" class="dropdown-item text-uppercase">My Profile</a>
+                      <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Sign out</a>
+                    {% else %}
+                      <a href="{% url 'account_signup' %}" class="dropdown-item text-uppercase">Register</a>
+                      <a href="{% url 'account_login' %}" class="dropdown-item text-uppercase">Sign in</a>
+                    {% endif %}
+                  </div>
+                </li>
+                <!-- bag that should show number of items inside -->
+                <li class="list-inline-item">
+                  <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
+                    <div class="text-center icon">
+                      <div>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
     </div>
 </nav>
