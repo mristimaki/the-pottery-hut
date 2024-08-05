@@ -13,11 +13,12 @@
         
             <div class="dropdown-bottom">
               <hr>
+              <form class="form-inline">
+                <input class="form-control border border-black text-uppercase" type="text" name="q" placeholder="Search..">
+              </form>
               {% if request.user.is_authenticated %}
               <a class="dropdown-item text-uppercase" href="#"><i class="fa-regular fa-heart"></i> My Favourites</a>
               {% endif %}
-              <a class="dropdown-item text-uppercase" href="#"><i class="fa-solid fa-book-open"></i> Blog</a>
-              <a class="dropdown-item text-uppercase" href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
 
@@ -25,17 +26,6 @@
         <div class="row">
             <div class="col mr-3 text-uppercase">
               <ul class="list-inline list-unstyled">
-                <!-- Search icon that should have hidden search input, toggle with js -->
-                <li class="list-inline-item dropdown">
-                    <div class="text-center icon">
-                        <button id="mobile-search-btn" class="form-control btn text-center icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-
-                        <form id="mobile-search-form" class="input-group input-group-sm w-100 search-input" method="GET" action="">
-                            <input class="form-control border border-white text-uppercase" type="text" name="q" placeholder="Search..">
-                        </form>
-                    </div>
-                </li>
-                
                 <!-- User account -->
                 <li class="list-inline-item dropdown">
                   <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

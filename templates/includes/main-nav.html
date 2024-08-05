@@ -11,12 +11,10 @@
     <a class="dropdown-item text-uppercase" href="#">All Pottery</a>
 
     <div class="dropdown-bottom">
-      <hr>
       {% if request.user.is_authenticated %}
+      <hr>
       <a class="dropdown-item text-uppercase" href="#"><i class="fa-regular fa-heart"></i> My Favourites</a>
       {% endif %}
-      <a class="dropdown-item text-uppercase" href="#"><i class="fa-solid fa-book-open"></i> Blog</a>
-      <a class="dropdown-item text-uppercase" href="#"><i class="fa-brands fa-facebook"></i></a>
     </div>
   </div>
 </div>
@@ -57,7 +55,7 @@
         <li class="list-inline-item">
           <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link navicon" href="#">
             <div class="text-center icon">
-              <!-- bag that shows number of items inside -->
+              
               <div>
                 <i class="fa-solid fa-basket-shopping"></i>
               </div>
